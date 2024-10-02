@@ -1,5 +1,4 @@
-# test_email_visibility.py
-
+test_email_visibility.py
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
@@ -24,8 +23,7 @@ assert email_element.is_displayed(), "Contact email is not visible."
 finally:
 driver.quit()
 
-# test_count_judges.py
-
+test_count_judges.py
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
@@ -47,8 +45,7 @@ assert len(judges) == 6, "Expected number of judges is not 6."
 finally:
 driver.quit()
 
-# test_no_mobile_partners.py
-
+test_no_mobile_partners.py
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -74,4 +71,3 @@ partner_names = [partner.text for partner in partners]
 assert "Apple Inc" not in partner_names, "Apple Inc is listed among partners."
 finally:
 driver.quit()
-
